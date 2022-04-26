@@ -1,13 +1,47 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/account/account",
+    "pages/chart/chart",
+    "pages/setting/setting"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#F5DEB3",
+    "navigationBarTitleText": "简单记账",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh":true
+  },
+  "tabBar": {
+    "color": "#626567",
+    "selectedColor": "#2A8CE5",
+    "backgroundColor": "#FBFBFB",
+    "borderStyle": "white",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "收支记录",
+      "iconPath": "images/icons8-add-100-w.png",
+      "selectedIconPath": "images/icons8-add-96-c.png"
+    }, {
+      "pagePath": "pages/account/account",
+      "text": "账户总览",
+      "iconPath": "images/icons8-card-100-w.png",
+      "selectedIconPath": "images/icons8-card-96-c.png"
+    }, {
+      "pagePath": "pages/chart/chart",
+      "text": "图表统计",
+      "iconPath": "images/icons8-slice-100-w.png",
+      "selectedIconPath": "images/icons8-slice-96-c.png"
+    }, {
+      "pagePath": "pages/setting/setting",
+      "text": "设置",
+      "iconPath": "images/icons8-setting-100-w.png",
+      "selectedIconPath": "images/icons8-setting-96-c.png"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json",
